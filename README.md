@@ -1,6 +1,9 @@
-======================================
-Gilded Rose Requirements Specification
-======================================
+# Gilded Fritz
+Easy Ruby set up for gilded rose kata to be used in a 1 hour workshop at Prodigy Finance. 
+
+Check out this repo, and read the section below: `Gilded Rose Requirements Specification`. The code is working, but the conjured item requirement at the end is not yet satisfied.
+
+## Gilded Rose Requirements Specification
 
 Hi and welcome to team Gilded Rose. As you know, we are a small inn with a prime location in a
 prominent city ran by a friendly innkeeper named Allison. We also buy and sell only the finest goods.
@@ -29,10 +32,18 @@ We have recently signed a supplier of conjured items. This requires an update to
 	- "Conjured" items degrade in Quality twice as fast as normal items
 
 Feel free to make any changes to the UpdateQuality method and add any new code as long as everything
-still works correctly. However, do not alter the Item class or Items property as those belong to the
+still works correctly. However, do not alter the Item class as it belongs to the
 goblin in the corner who will insta-rage and one-shot you as he doesn't believe in shared code
-ownership (you can make the UpdateQuality method and Items property static if you like, we'll cover
-for you).
+ownership.
 
 Just for clarification, an item can never have its Quality increase above 50, however "Sulfuras" is a
 legendary item and as such its Quality is 80 and it never alters.
+
+## Changes from the original
+See the original here: https://github.com/emilybache/GildedRose-Refactoring-Kata
+
+I made the following changes:
+- Ruby version only
+- RSpec only
+- Added a branch `start-from-specs` with pre-written specs for those who just want to get started refactoring. This is unrealistic (why would such bad code have useful specs?) but it allows us to get to the "let's make this code better" step faster. 
+- The TextTests included with the original are excluded because I found it a pain to install TextTest and getting 30 devs to install before starting going to be chaos.
