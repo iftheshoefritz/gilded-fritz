@@ -86,14 +86,14 @@ describe GildedRose do
 
         describe 'conjured' do
           it 'decreases by 2 before sell by' do
-            pending
+            pending 'not implemented yet'
             items = [Item.new("Conjured Anything", 1, 2)]
             GildedRose.new(items).update_quality()
             expect(items[0].quality).to eq 0
           end
 
           it 'decreases by 4 after sell by' do
-            pending
+            pending 'not implemented yet'
             items = [Item.new("Conjured Anything", 0, 4)]
             GildedRose.new(items).update_quality()
             expect(items[0].quality).to eq 0
