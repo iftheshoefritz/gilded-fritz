@@ -2,12 +2,6 @@ require File.join(File.dirname(__FILE__), 'gilded_rose')
 
 describe GildedRose do
 
-  # QUESTIONS: 
-  #
-  # How did you decide what specs to write? Boundary values-ish?
-  # Did I read the code to work out specs? Not really ... kind of incomprehensible
-  #
-  #
   describe "#update_quality" do
     it "does not change the name" do
       items = [Item.new("foo", 0, 0)]
