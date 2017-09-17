@@ -47,3 +47,4 @@ I made the following changes:
 - RSpec only
 - Added a branch `start-from-specs` with pre-written specs for those who just want to get started refactoring. This is unrealistic (why would such bad code have useful specs?) but it allows us to get to the "let's make this code better" step faster. 
 - The TextTests included with the original are excluded because I found it a pain to install TextTest and getting 30 devs to install before starting going to be chaos.
+- Moved requirements text file into the README.md
