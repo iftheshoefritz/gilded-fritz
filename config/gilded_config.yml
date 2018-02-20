@@ -1,0 +1,62 @@
+---
+
+defaults:
+  url: http://localhost:4567/items
+  zendesk:
+    subdomain: 'zendesksubdomain'
+    dropbox_id: 'zendeskdropboxid'
+    jwt_secret: 'somejwtsecret'
+    url: 'https://fakezendesk.example.com/api/v2'         # used for API integration
+    username: 'zendeskusername'                           # used for API integration
+    token: 'zendeskdefaulttoken'                          # used for API integration
+  protocol: 'http://'
+  host: 'localhost'
+  port: '4568'
+  path: 'items'
+  paypal:
+    merchant_id: PAYPALMERCHANTID # This is a sandbox merchant id
+    handshake_url: https://sandbox.paypal.com/cgi-bin/webscr?cmd=_notify-validate # Notification validation URL
+    receiver_email: 'receiver_email@prodigyfinance.com'
+    sandbox_mode: true
+  linkedin:
+    api_key: "linkedinapikey"
+    secret_key: "linkedinsecretkey"
+  credit_comm:
+    url: ''
+    token: ''
+    manual_token:
+      user_email:
+  school_api:
+    url: 'http://localhost:3000'
+    token: 'school_dummy_token'
+  cology:
+    username: "somecologyuser"
+    password: "somecologypw"
+  idv:
+    token: "idvtoken"
+  jumio:
+    api_token: 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'
+    api_secret: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+  comply_advantage:
+    api_token: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+  series_api:
+    series_dummy_token: 'series_dummy_token'
+  items:
+    - ['Sulfuras, Hand of Ragnaros', 1, 80]
+    - ['Backstage passes to a TAFKAL80ETC concert', 11, 1]
+    - ['Aged Brie', 11, 1]
+  echosign:
+    rest_host: 'api.fakeechosign.com'
+    auth_host: 'secure.fakeechosign.com'
+    platform_host: 'example.com'
+    auth_client_id: '12345'
+    secret_key_base:
+  recaptcha:
+    site_key:
+    secret_key:
+  marketing_cloud:
+    client_id:
+    client_secret:
+    sftp_host:
+    stfp_username:
+    stfp_password:
