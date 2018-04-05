@@ -1,7 +1,7 @@
 ---
 
 defaults:
-  url: http://localhost:4567/items
+  gilded_url: http://localhost:4567/items
   zendesk:
     subdomain: 'zendesksubdomain'
     dropbox_id: 'zendeskdropboxid'
@@ -9,10 +9,6 @@ defaults:
     url: 'https://fakezendesk.example.com/api/v2'         # used for API integration
     username: 'zendeskusername'                           # used for API integration
     token: 'zendeskdefaulttoken'                          # used for API integration
-  protocol: 'http://'
-  host: 'localhost'
-  port: '4568'
-  path: 'items'
   paypal:
     merchant_id: PAYPALMERCHANTID # This is a sandbox merchant id
     handshake_url: https://sandbox.paypal.com/cgi-bin/webscr?cmd=_notify-validate # Notification validation URL
@@ -29,6 +25,10 @@ defaults:
   school_api:
     url: 'http://localhost:3000'
     token: 'school_dummy_token'
+  protocol: 'http://'
+  host: 'localhost'
+  port: '4568'
+  path: 'items'
   cology:
     username: "somecologyuser"
     password: "somecologypw"
