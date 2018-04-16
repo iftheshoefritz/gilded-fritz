@@ -1,5 +1,7 @@
 require 'sinatra'
 
+set :bind, '0.0.0.0'
+
 items = [
   ["Sulfuras, Hand of Ragnaros", 1, 90],
   ["Backstage passes to a TAFKAL80ETC concert", 11, 1],

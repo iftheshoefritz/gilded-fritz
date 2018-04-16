@@ -8,6 +8,4 @@ WORKDIR $INSTALL_PATH
 COPY Gemfile Gemfile
 RUN bundle install
 
-COPY gilded_server.rb gilded_server.rb
-
-CMD ruby gilded_server.rb
+CMD ["ruby", "gilded_server.rb"]
