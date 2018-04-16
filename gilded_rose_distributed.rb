@@ -5,12 +5,14 @@ store = GildedRose.new(
   Gilded::API.items.map {|item| Item.new(*item)}
 )
 
-puts "********** ITEMS YESTERDAY:"
+day = 0
 
-puts store.items.map {|item| "NAME: #{item.name} SELL_IN: #{item.sell_in} QUALITY: #{item.quality}"}
-
-store.update_quality
-
-puts "********** ITEMS TODAY:"
-
-puts store.items.map {|item| "NAME: #{item.name} SELL_IN: #{item.sell_in} QUALITY: #{item.quality}"}
+puts "Any key to update quality, q to quit"
+input = gets
+while(input.strip != 'q')
+  store.update_quality
+  day += 1
+  puts "********** ITEMS DAY #{day}:"
+  puts store.items.map {|item| "NAME: #{item.name} SELL_IN: #{item.sell_in} QUALITY: #{item.quality}"}
+  input = gets
+end
