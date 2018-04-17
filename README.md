@@ -1,7 +1,23 @@
 # Gilded Fritz
 Easy Ruby set up for gilded rose kata to be used in a 1 hour workshop at Prodigy Finance. 
 
-Check out this repo, and read the section below: `Gilded Rose Requirements Specification`. The code is working, but the conjured item requirement at the end is not yet satisfied.
+## Gilded Rose Distributed setup
+
+The Tavern is now distributed! To take advantages of our awesome new architecture, checkout this repo, then run
+
+    > ./startup.sh
+
+This could take a long time in the build phase, to download the ruby:2.5.0 image that these containers are
+based on.
+
+Startup.sh attaches you to the Distributed Tavern client container, which runs in a loop FOREVER.
+
+- To exit without stopping the container, press CTRL-P CTRL-Q (To attach to the container again, run `docker attach gilded_client`)
+- To exit and stop the client container press CTRL-C (To come back: `docker-compose up -d client`, then `docker attach gilded_client`)
+
+To read logs, run `docker logs -f gilded_api` or `docker logs -f gilded_client`
+
+To rebuild the containers after you've changed the source, shut everything down (`docker-compose down`) then run `./startup.sh` again
 
 ## Gilded Rose Requirements Specification
 
@@ -48,3 +64,5 @@ I made the following changes:
 - Added a branch `start-from-specs` with pre-written specs for those who just want to get started refactoring. This is unrealistic (why would such bad code have useful specs?) but it allows us to get to the "let's make this code better" step faster. 
 - The TextTests included with the original are excluded because I found it a pain to install TextTest and getting 30 devs to install before starting going to be chaos.
 - Moved requirements text file into the README.md
+
+
