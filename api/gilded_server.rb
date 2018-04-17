@@ -13,5 +13,7 @@ get '/items' do
 end
 
 get '/items/:id' do |id|
-  items[params['id'].to_i].to_json
+  out_items = items[params['id'].to_i].dup
+  out_items[2] -= 10
+  out_items.to_json
 end
