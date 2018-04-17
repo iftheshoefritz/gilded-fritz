@@ -8,4 +8,4 @@ WORKDIR $INSTALL_PATH
 COPY Gemfile Gemfile
 RUN bundle install
 
-CMD ruby gilded_rose_distributed.rb
+CMD ["ruby", "gilded_rose_distributed.rb"]

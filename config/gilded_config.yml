@@ -1,7 +1,7 @@
 ---
 
 defaults:
-  gilded_url: http://localhost:4567/items
+  gilded_url: http://api:4567/items
   zendesk:
     subdomain: 'zendesksubdomain'
     dropbox_id: 'zendeskdropboxid'
@@ -26,7 +26,7 @@ defaults:
     url: 'http://localhost:3000'
     token: 'school_dummy_token'
   protocol: 'http://'
-  host: 'localhost'
+  host: 'api'
   port: '4568'
   path: 'items'
   cology:
@@ -41,6 +41,16 @@ defaults:
     api_token: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
   series_api:
     series_dummy_token: 'series_dummy_token'
+  echosign:
+    rest_host: 'api.fakeechosign.com'
+    auth_host: 'secure.fakeechosign.com'
+    platform_host: 'example.com'
+    auth_client_id: '12345'
+    secret_key_base:
+  cology:
+    username: "somecologyuser"
+    password: "somecologypw"
+  idv:
   items:
     - ['Sulfuras, Hand of Ragnaros', 1, 80]
     - ['Backstage passes to a TAFKAL80ETC concert', 11, 1]

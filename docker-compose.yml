@@ -7,10 +7,16 @@ services:
       - ./api:/api
     ports: 
       - "4567:4567"
+    image: gilded_api
+    container_name: gilded_api
 
-  #client:
-  #  build: .
-  #  stdin_open: true
-  #  tty: true
-  #  volumes:
-  #    - .:/app
+  client:
+    build: .
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/app
+    image: gilded_client
+    links:
+      - api
+    container_name: gilded_client
