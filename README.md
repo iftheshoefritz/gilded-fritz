@@ -1,6 +1,3 @@
-# Gilded Fritz
-Easy Ruby set up for gilded rose kata to be used in a 1 hour workshop at Prodigy Finance. 
-
 ## Gilded Rose Distributed setup
 
 The Tavern is now distributed! To take advantages of our awesome new architecture, checkout this repo, then run
