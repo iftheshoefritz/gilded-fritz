@@ -1,6 +1,6 @@
 ## Gilded Rose Distributed setup
 
-The Tavern is now distributed! To take advantages of our awesome new architecture, checkout this repo, then run
+The Tavern is now distributed! To take advantages of our awesome new architecture (items microservice / API + distributed client), checkout this repo, then run
 
     > ./startup.sh
 
