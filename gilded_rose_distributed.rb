@@ -7,12 +7,17 @@ store = GildedRose.new(
 
 day = 0
 
-puts "Any key to update quality, q to quit"
+puts "press i for current inventory, n to advance day"
 input = gets
-while(input.strip != 'q')
-  store.update_quality
-  day += 1
-  puts "********** ITEMS DAY #{day}:"
-  puts store.items.map {|item| "NAME: #{item.name} SELL_IN: #{item.sell_in} QUALITY: #{item.quality}"}
+while(true)
+  if input.strip == 'i'
+    puts "*** ITEMS DAY #{day}****"
+    puts store.items.map {|item| "NAME: #{item.name} SELL_IN: #{item.sell_in} QUALITY: #{item.quality}"}
+  elsif input.strip == 'n'
+    day += 1
+    store.update_quality
+    puts "Advanced day to #{day}"
+  end
+  puts "press i for current inventory, n to advance day"
   input = gets
 end
