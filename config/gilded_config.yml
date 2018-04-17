@@ -1,7 +1,8 @@
 ---
 
 defaults:
-  gilded_url: http://api:4567/items
+  gilded_api:
+    url: http://api:4567/items
   zendesk:
     subdomain: 'zendesksubdomain'
     dropbox_id: 'zendeskdropboxid'
