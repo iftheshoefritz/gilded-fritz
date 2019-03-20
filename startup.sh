@@ -5,4 +5,4 @@ echo "*"
 echo "*"
 echo "*** Distributed Tavern ***"
 echo "Attaching to gilded client... press i<enter> to see inventory"
-docker attach --sig-proxy=false gilded_client
+docker attach --sig-proxy=true gilded_client

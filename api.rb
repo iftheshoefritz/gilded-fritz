@@ -14,7 +14,7 @@ module Gilded
                   http.request(req)
                 end
                 JSON.parse(res.body)
-              rescue StandardError
+              rescue StandardError => e
                 config.error_condition
               end
       items
